@@ -5,46 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Jamieson</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>John Jamieson<br>Software Developer</h1>
+    <header class="header-flex">
+        <h1 class="page-title">John Jamieson<br>Software Developer</h1>
 
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contact-me">Contact Me</a>
-            <a href="#resume">Resume</a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
         </nav>
-
-        <div class="hero"></div>
     </header>
 
-    <main>
-        <section>
+    <div class="hero"></div>
+
+    <main class="main-flex">
+        <section class="section-flex" id="about-me">
             <div class="section-title"><h3>About Me</h3></div>
 
-            <div class="section-content">About Me</div>
-        </section>
-
-        <section>
-            <div class="section-title"><h3>Work</h3></div>
-
             <div class="section-content">
-                <nav>
-                    <a href="https://johnjamieson.ca/">Personal Website</a>
-                    <a href="https://crusaderjohn.github.io/Module-01-Challenge/">Horiseon Marketing Agency</a>
-                    <a href="https://crusaderjohn.github.io/prework-study-guide/">Prework Study Guide</a>
-                    <a href="https://johnjamieson.ca/">Personal Website</a>
-                    <a href="https://johnjamieson.ca/">Personal Website</a>
-                </nav>
+                <p>I am a new software developer and former senior financial analyst. Currently, I work at CIBC as a
+                    Production Application Support Analyst, and I am working towards completing a Computer
+                    Programming & Analysis advanced diploma at Seneca College. Previously, I had worked in finance
+                    for nine years having completed an undergraduate degree in business administration from
+                    Wilfrid Laurier University.</p>
             </div>
         </section>
 
-        <section>
+        <section class="section-flex" id="work">
+            <div class="section-title"><h3>Work</h3></div>
+
+            <nav class="section-content">
+                <a class="work-links" href="https://johnjamieson.ca/">
+                    <img id="big-link" src="./assets/images/John-Jamieson.jpg" alt="Personal Website">
+                </a>
+                <a class="work-links" href="https://crusaderjohn.github.io/Module-01-Challenge/">
+                    <img src="./assets/images/John-Jamieson.jpg" alt="Horiseon Marketing Agency">
+                </a>
+                <a class="work-links" href="https://crusaderjohn.github.io/prework-study-guide/">
+                    <img src="./assets/images/John-Jamieson.jpg" alt="Prework Study Guide">
+                </a>
+                <a class="work-links" href="https://johnjamieson.ca/">
+                    <img src="./assets/images/John-Jamieson.jpg" alt="Personal Website">
+                </a>
+                <a class="work-links" href="https://johnjamieson.ca/">
+                    <img src="./assets/images/John-Jamieson.jpg" alt="Personal Website">
+                </a>
+            </nav>
+        </section>
+
+        <section class="section-flex" id="contact-me">
             <div class="section-title"><h3>Contact Me</h3></div>
 
             <div class="section-content">Contact Me</div>

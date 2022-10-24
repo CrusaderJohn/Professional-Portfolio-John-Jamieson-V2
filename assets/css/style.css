@@ -1,0 +1,138 @@
+:root {
+    --white: rgba(255, 255, 255, 0.75);
+    --purple: #663399;
+    --black: #000000;
+}
+
+body {
+    background: var(--purple);
+}
+
+.header-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.page-title {
+    flex: auto;
+    text-align: center;
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 24px;
+}
+
+.menu {
+    padding: 0;
+    margin: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: right;
+}
+
+.menu ul li a {
+    display: block;
+    color: var(--black);
+    font-size: 24px;
+    text-align: center;
+    padding: 30px 40px;
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    color: var(--black);
+}
+
+.menu ul li a:hover {
+    background-color: var(--purple);
+}
+
+.hero {
+    height: 20vh;
+    background-image: url(../images/John-Jamieson.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 80vh;
+    background: var(--white);
+}
+
+.section-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#big-link {
+}
+
+.section-title {
+    flex: 25%;
+}
+
+.section-content {
+    flex: 75%;
+}
+
+.work-links {
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+    width: 100%;
+    background: var(--white);
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-flex {
+        flex-direction: row;
+    }
+
+    .section-title {
+        flex: 100%;
+    }
+
+    .section-content {
+        flex: 100%;
+    }
+
+    .page-title {
+        flex: 100%;
+    }
+
+    .menu{
+        flex: auto;
+    }
+
+    .menu ul li {
+        float: none;
+    }
+}
